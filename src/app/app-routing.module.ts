@@ -5,13 +5,13 @@ import { NosProduitsComponent } from './NosProduits/NosProduits.component';
 import { InformationsComponent } from './Informations/informations.component';
 
 const routes: Routes = [
-  {path : '', component : HomeComponent},
-  {path : 'NosProduits', component : NosProduitsComponent},
-  {path : 'Informations', component : InformationsComponent}
+  { path: '', component: HomeComponent },
+  { path: 'NosProduits', component: NosProduitsComponent },
+  { path: 'Informations', component: InformationsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

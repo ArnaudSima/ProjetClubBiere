@@ -5,13 +5,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  labels : string[] = [
-    'Connexion',
-    "Inscription"
-  ]
-  isOpen : Boolean = false;
+  labels: string[] = ['Connexion', 'Inscription'];
+  isOpen: Boolean = false;
 
-  toggleDropDownUserIcon():void{
-    this.isOpen = !this.isOpen
+  toggleDropDownUserIcon(): void {
+    this.isOpen = !this.isOpen;
   }
 }

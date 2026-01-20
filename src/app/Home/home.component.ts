@@ -4,10 +4,9 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'projet-test-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
-export class HomeComponent implements OnInit{
-    constructor(private router: Router) { }  // ⬅️ Injecter Router
-    ngOnInit(): void {
-    }
+export class HomeComponent implements OnInit {
+  constructor(private router: Router) {}
+  ngOnInit(): void {}
 }
