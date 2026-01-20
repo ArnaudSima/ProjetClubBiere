@@ -1,0 +1,30 @@
+.HeaderWrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: slategrey;
+    align-items: center;
+    justify-content: space-between;
+}
+a.active{
+    color: blue;
+    font-weight: bold;
+}
+a{
+    color: black;
+}
+.UserIcon{
+    margin-right: 10px;
+    
+}
+.List{
+    position: fixed;
+}
+.ListIcon{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.List.isOpen{
+    transform: translateY(-50%);
+}
