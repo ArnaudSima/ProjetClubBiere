@@ -8,26 +8,34 @@
   </head>
   <body>
     <div class="HeaderWrapper">
-      <h1>
-        <a
+      <H1 class="logo">Logo</H1>
+      <div class="primary-button-wrapper">
+        <button
+          class="btn primary-button"
           routerLink="/"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
-          >TitreProjet</a
         >
-      </h1>
-      <h2>
-        <a routerLink="/NosProduits" routerLinkActive="active">Nos produits</a>
-      </h2>
-      <h2>
-        <a routerLink="/Informations" routerLinkActive="active">Informations</a>
-      </h2>
-      <div class="ListIcon">
+          Accueil
+        </button>
+        <button
+          class="btn primary-button"
+          routerLink="/NosProduits"
+          routerLinkActive="active"
+        >
+          Nos produits
+        </button>
+      </div>
+
+      <div class="user-icon-placement">
         <svg
-          (click)="toggleDropDownUserIcon()"
-          class="UserIcon"
+          routerLink="/Auth"
+          routerLinkActive="active"
+          (click)="togglePrimaryButton(4)"
           width="50px"
           height="50px"
+          class="user-icon"
+          [class.active]="buttonToggledNumber === 4"
           viewBox="0 0 32 32"
           enable-background="new 0 0 32 32"
           id="Stock_cut"
@@ -77,11 +85,6 @@
             </g>
           </g>
         </svg>
-        <div class="List" [class.toggled]="isOpen" *ngIf="isOpen">
-          @for (label of labels; track label) {
-            <div>{{ label }}</div>
-          }
-        </div>
       </div>
     </div>
   </body>

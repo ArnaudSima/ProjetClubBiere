@@ -5,10 +5,8 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  labels: string[] = ['Connexion', 'Inscription'];
-  isOpen: Boolean = false;
-
-  toggleDropDownUserIcon(): void {
-    this.isOpen = !this.isOpen;
+  buttonToggledNumber: number = 0;
+  togglePrimaryButton(buttonNumber: number): void {
+    this.buttonToggledNumber = buttonNumber;
   }
 }

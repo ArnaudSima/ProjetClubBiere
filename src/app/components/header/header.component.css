@@ -1,30 +1,59 @@
 .HeaderWrapper{
     display: flex;
     flex-direction: row;
-    background-color: slategrey;
+    background-color: black;
     align-items: center;
-    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
-a.active{
-    color: blue;
-    font-weight: bold;
+.primary-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 300px;
+}
+.primary-button.active{
+    color: #F2B705;
 }
 a{
-    color: black;
+    color: #121212;
 }
-.UserIcon{
-    margin-right: 10px;
-    
-}
+
 .List{
     position: fixed;
-}
-.ListIcon{
-    display: flex;
-    flex-direction: column;
-
 }
 
 .List.isOpen{
     transform: translateY(-50%);
+}
+
+.logo{
+    margin-left: 10px;
+}
+.primary-button{
+    color: #ffffff;
+}
+.user-icon{
+ fill: #ffffff;
+  stroke: #ffffff;
+  cursor: pointer;
+}
+.user-icon-placement{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.user-icon circle,
+.user-icon path {
+  stroke: #ffffff;
+}
+
+.user-icon.active{
+ fill: #F2B705;
+  stroke: #F2B705;
+  cursor: pointer;
+}
+.user-icon.active circle,
+.user-icon.active path {
+  stroke: #F2B705;
 }
