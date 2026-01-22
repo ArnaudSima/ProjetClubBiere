@@ -7,17 +7,28 @@ import { FormsModule } from '@angular/forms';
   selector: 'projet-test-form-sign-in',
   templateUrl: './formSignIn.component.html',
   styleUrl: './formSignIn.component.css',
-  providers: [AuthService],
 })
 export class FormSignInComponent implements OnInit {
   ngOnInit(): void {}
   email: string = '';
   password: string = '';
-  constructor(private authService: AuthService) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+  ) {}
 
   FormOnSubmit() {
-    this.authService.LoginUser(this.email, this.password);
+    if (this.authService.CredentialsAreCorrect(this.email, this.password)) {
+      this.authService.LoginUser({
+        Email: this.email,
+        Password: this.password,
+      });
+      this.router.navigate(['/dashboard']);
+    } else {
+      //something
+    }
   }
+
   onInputChange(event: Event) {
     const target = event.target as HTMLInputElement;
   }

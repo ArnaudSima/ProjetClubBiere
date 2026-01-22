@@ -10,12 +10,16 @@ export class AuthService {
   ];
   CurrentUser: User | null = null;
   //Login
-  LoginUser(email: string, password: string): void {
+  CredentialsAreCorrect(email: string, password: string): boolean {
     for (let user of this.Users) {
       if (user.Email === email && user.Password === password) {
-        this.CurrentUser = { Email: email, Password: password };
+        return true;
       }
     }
+    return false;
+  }
+  LoginUser(user: User) {
+    this.CurrentUser = user;
   }
   UserIsLoggedIn(): boolean {
     if (this.CurrentUser === null) {

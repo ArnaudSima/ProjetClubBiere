@@ -9,6 +9,7 @@ import { NosProduitsComponent } from './NosProduits/NosProduits.component';
 import { AuthComponent } from './Auth/auth.component';
 import { FormSignInComponent } from './components/Form/formSignIn.component';
 import { FormsModule } from '@angular/forms';
+import { DashBoardComponent } from './DashBoard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     NosProduitsComponent,
     AuthComponent,
     FormSignInComponent,
+    DashBoardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   bootstrap: [AppComponent],
