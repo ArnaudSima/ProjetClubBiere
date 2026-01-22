@@ -9,7 +9,7 @@
 }
 .form-cell-wrapper{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     column-gap: 10px;
 }
 .btn-form{
@@ -18,9 +18,19 @@
     border-color: #F2B705;
     justify-self: center;
 }
+.btn-form:hover{
+    color: #F8F8F8;
+    background-color: #F2B705;
+    transform: translateY(-1px);
+}
+.form-form{
+    justify-self: center;
+}
+/*To be modified*/
 .form-wrapper{
     display: grid;
     background-color: #F8F8F8;
     padding: 10px;
     width: fit-content;
+    margin-bottom: 100px;
 }

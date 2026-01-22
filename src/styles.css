@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+app-root{
+    display: block;
+    height: 100%; 
+}
+.router-container {
+    height: 100%;
+}
+
+.router-container > :not(router-outlet) {
+    height: 100%;
+    display: grid;
+}
+projet-test-auth{
+    justify-content: center;
+    align-content: center;
+}

@@ -1,24 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body>
-    <form class="border rounded form-wrapper">
-      <div class="form-cell-wrapper">
-        @for (row of Matrix; track $index) {
-          <div class="form-row-wrapper">
-            @for (col of row; track $index) {
-              <div class="form-group form-column-wrapper">
-                <input [type]="col" class="form-control" />
-              </div>
-            }
+<form onsubmit="" class="border rounded form-wrapper">
+  <h2 class="form-form">{{ Title }}</h2>
+  <div class="form-cell-wrapper">
+    @for (row of Matrix; track $index) {
+      <div class="form-row-wrapper">
+        @for (col of row; track $index) {
+          <div class="form-group form-column-wrapper">
+            <label [for]="col">{{ col }}</label>
+            <input
+              placeholder="Entrez votre {{ col }}"
+              [type]="col"
+              class="form-control"
+              (input)="onInputChange($event)"
+            />
           </div>
         }
       </div>
-      <button type="submit" class="btn btn-form">Confirmer</button>
-    </form>
-  </body>
-</html>
+    }
+  </div>
+  <button type="submit" class="btn btn-form">Confirmer</button>
+</form>
