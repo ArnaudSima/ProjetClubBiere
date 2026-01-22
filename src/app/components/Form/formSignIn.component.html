@@ -1,0 +1,33 @@
+<form (ngSubmit)="FormOnSubmit()" class="border rounded form-wrapper">
+  <div class="head-wrapper">
+    <h1>Logo</h1>
+    <h2>Connexion</h2>
+  </div>
+  <div class="input-wrapper">
+    <div>
+      <label for="email">Courriel</label>
+      <input
+        placeholder="Entrez courriel"
+        type="email"
+        class="form-control"
+        [(ngModel)]="email"
+        name="email"
+      />
+    </div>
+    <div>
+      <label for="password">Mot de passe</label>
+      <input
+        placeholder="Entrez mot de passe"
+        type="password"
+        class="form-control"
+        [(ngModel)]="password"
+        name="password"
+      />
+    </div>
+  </div>
+
+  <div class="btn-wrapper">
+    <button type="submit" class="btn btn-form">Confirmer</button>
+    <a href="">S'inscrire</a>
+  </div>
+</form>

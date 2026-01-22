@@ -7,7 +7,8 @@ import { HeaderComponent } from './components/Header/header.component';
 import { HomeComponent } from './Home/home.component';
 import { NosProduitsComponent } from './NosProduits/NosProduits.component';
 import { AuthComponent } from './Auth/auth.component';
-import { FormComponent } from './components/Form/form.component';
+import { FormSignInComponent } from './components/Form/formSignIn.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,9 @@ import { FormComponent } from './components/Form/form.component';
     HomeComponent,
     NosProduitsComponent,
     AuthComponent,
-    FormComponent,
+    FormSignInComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

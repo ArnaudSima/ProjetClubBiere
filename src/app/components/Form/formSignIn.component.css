@@ -1,0 +1,44 @@
+
+.btn-form{
+    color: #F2B705;
+    border: solid 1px;
+    border-color: #F2B705;
+    justify-self: center;
+    height: 45px;
+}
+.btn-form:hover{
+    color: #F8F8F8;
+    background-color: #F2B705;
+    transform: translateY(-1px);
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+.head-wrapper{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*To be modified*/
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    padding: 10px;
+    height: 400px;
+    width: fit-content;
+    margin-bottom: 100px;
+}
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+
+}

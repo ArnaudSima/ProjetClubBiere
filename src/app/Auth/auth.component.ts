@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormType } from './FormTypes';
+import { AuthService } from '../Services/Auth/auth.service';
 @Component({
   selector: 'projet-test-auth',
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.css',
 })
 export class AuthComponent implements OnInit {
-  constructor(private router: Router) {}
   ngOnInit(): void {
     this.RedirectUser();
   }
