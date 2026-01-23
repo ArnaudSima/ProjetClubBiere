@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormType } from './FormTypes';
-import { AuthService } from '../Services/Auth/auth.service';
+import { AuthService } from '../../Services/Auth/auth.service';
 @Component({
   selector: 'projet-test-auth',
   templateUrl: './auth.component.html',

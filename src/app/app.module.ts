@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/Header/header.component';
 import { HomeComponent } from './Home/home.component';
 import { NosProduitsComponent } from './NosProduits/NosProduits.component';
-import { AuthComponent } from './Auth/auth.component';
+import { AuthComponent } from './Module/Security/auth.component';
 import { FormSignInComponent } from './components/Form/formSignIn.component';
 import { FormsModule } from '@angular/forms';
 import { DashBoardComponent } from './DashBoard/dashboard.component';
