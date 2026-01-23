@@ -1,13 +1,13 @@
 <form (ngSubmit)="FormOnSubmit()" class="border rounded form-wrapper">
   <div class="head-wrapper">
     <h1>Logo</h1>
-    <h2>Connexion</h2>
+    <h2>{{ "SignIn" | translate }}</h2>
   </div>
   <div class="input-wrapper">
     <div>
-      <label for="email">Courriel</label>
+      <label for="email">{{ "Email" | translate }}</label>
       <input
-        placeholder="Entrez courriel"
+        [placeholder]="'EnterEmail' | translate"
         type="email"
         class="form-control"
         [(ngModel)]="email"
@@ -17,7 +17,7 @@
     <div>
       <label for="password">Mot de passe</label>
       <input
-        placeholder="Entrez mot de passe"
+        [placeholder]="'EnterPassword' | translate"
         type="password"
         class="form-control"
         [(ngModel)]="password"
@@ -27,7 +27,9 @@
   </div>
 
   <div class="btn-wrapper">
-    <button type="submit" class="btn btn-yellow">Confirmer</button>
-    <a href="">S'inscrire</a>
+    <button type="submit" class="btn btn-yellow">
+      {{ "Confirm" | translate }}
+    </button>
+    <a href="">{{ "SignUp" | translate }}</a>
   </div>
 </form>

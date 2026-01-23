@@ -11,6 +11,7 @@ import { FormSignInComponent } from './components/Form/formSignIn.component';
 import { FormsModule } from '@angular/forms';
 import { DashBoardComponent } from './DashBoard/dashboard.component';
 import { AgeVerificationDirective } from '../directives/age-verification-directive.directive';
+import { TranslationPipe } from '../pipes/translate.pipe';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AgeVerificationDirective } from '../directives/age-verification-directi
     FormSignInComponent,
     DashBoardComponent,
     AgeVerificationDirective,
+    TranslationPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   bootstrap: [AppComponent],

@@ -9,9 +9,9 @@ export class AgeVerificationDirective {
   ) {}
 
   @Input('appTestAgeVerification')
-  set hasLegalAge(isLegal: boolean) {
+  set hasLegalAge(isMajor: boolean) {
     this.viewContainer.clear();
-    if (!isLegal) {
+    if (!isMajor) {
       this.viewContainer.createEmbeddedView(this.templateRef);
     }
   }

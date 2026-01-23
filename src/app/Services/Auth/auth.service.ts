@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { User } from './user';
+import translations from '../../../languageSettings.json';
+type Languages = keyof typeof translations;
+
 @Injectable({
   providedIn: 'root',
 })
@@ -9,6 +12,9 @@ export class AuthService {
     { Email: 'admin@example.com', Password: 'admin123' },
   ];
   CurrentUser: User | null = null;
+  //to be changed
+  LanguagePref: Languages = 'FR';
+  IsMajor: boolean = false;
   //Login
   CredentialsAreCorrect(email: string, password: string): boolean {
     for (let user of this.Users) {
@@ -33,4 +39,11 @@ export class AuthService {
     this.CurrentUser = null;
   }
   //Sign up
+  //User Prefs
+  ChangeLanguage(requestedLanguage: Languages): void {
+    this.LanguagePref = requestedLanguage;
+  }
+  ChangeIsMajor(isMajor: boolean) {
+    this.IsMajor = isMajor;
+  }
 }

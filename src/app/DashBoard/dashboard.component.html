@@ -1,4 +1,25 @@
 <div class="DashBoardWrapper">
   <h1>{{ email }}</h1>
-  <button (click)="logOut()" class="btn btn-yellow">Deconnexion</button>
+  <button (click)="logOut()" class="btn btn-yellow">
+    {{ "LogOut" | translate }}
+  </button>
+
+  <div class="dropdown">
+    <button
+      class="btn btn-secondary dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      {{ preferredLanguage }}
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="dropdown-item" (click)="changeLanguage('FR')">Fr</a>
+      </li>
+      <li>
+        <a class="dropdown-item" (click)="changeLanguage('EN')">En</a>
+      </li>
+    </ul>
+  </div>
 </div>

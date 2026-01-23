@@ -1,0 +1,33 @@
+{
+"EN" :  {
+  "home": "Home",
+  "OurProducts": "Our Products",
+  "WhoAreWe": "Who are we?",
+  "WhatDoWeDo": "What do we do?",
+  "OurValues": "Our values",
+  "SignIn": "Sign in",
+  "Email": "Email",
+  "Password": "Password",
+  "Confirm": "Confirm",
+  "SignUp": "Sign up",
+  "LogOut": "Log out",
+  "EnterEmail" : "Enter your email",
+  "EnterPassword" : "Enter you password"
+},
+
+"FR" : {
+    "home" : "Accueil",
+    "OurProducts" : "Nos Produits",
+    "WhoAreWe" : "Qui sommes nous?",
+    "WhatDoWeDo" : "Que faisons nous?",
+    "OurValues" : "Nos valeurs",
+    "SignIn" : "Connexion",
+    "Email" : "Courriel",
+    "Password" : "Mot de passe",
+    "Confirm" : "Confirmer",
+    "SignUp" : "S'inscrire",
+    "LogOut" : "Déconnexion",
+    "EnterEmail" : "Entrez votre courriel",
+    "EnterPassword" : "Entrer votre mot de passe"
+}
+}
