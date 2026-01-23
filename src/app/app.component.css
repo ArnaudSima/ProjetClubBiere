@@ -5,3 +5,34 @@ div > :not(router-outlet) {
 div{
     height: 100%;
 }
+.minor-blocker{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minor-blocker > div{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.minor-blocker > div > h3{
+    color: #F2B705;
+}
+.minor-blocker > div > div{
+    display: flex;
+    gap: 5px;
+}
+

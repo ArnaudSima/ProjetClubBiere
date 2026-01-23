@@ -21,6 +21,23 @@ projet-test-auth{
     align-content: center;
 }
 projet-test-home{
-
     justify-self: center;
+}
+
+projet-test-dashboard{
+    justify-content: center;
+    align-content: center;
+}
+.btn.btn-yellow:hover{
+    color: #F8F8F8;
+    background-color: #F2B705;
+    transform: translateY(-1px);
+}
+
+.btn.btn-yellow{
+        color: #F2B705;
+    border: solid 1px;
+    border-color: #F2B705;
+        height: 45px;
+
 }

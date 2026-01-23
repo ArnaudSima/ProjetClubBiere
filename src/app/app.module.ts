@@ -10,6 +10,7 @@ import { AuthComponent } from './Auth/auth.component';
 import { FormSignInComponent } from './components/Form/formSignIn.component';
 import { FormsModule } from '@angular/forms';
 import { DashBoardComponent } from './DashBoard/dashboard.component';
+import { AgeVerificationDirective } from '../directives/age-verification-directive.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DashBoardComponent } from './DashBoard/dashboard.component';
     AuthComponent,
     FormSignInComponent,
     DashBoardComponent,
+    AgeVerificationDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   bootstrap: [AppComponent],

@@ -15,7 +15,7 @@ const routes: Routes = [
     component: DashBoardComponent,
     canActivate: [authGuard],
   },
-  { path: '**', redirectTo: '' }, // Route 404
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

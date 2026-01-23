@@ -1,3 +1,18 @@
+<div class="minor-blocker" *appTestAgeVerification="hasLegalAge">
+  <div>
+    <h1>Logo</h1>
+    <h3>Bienvenue sur le site de Placeholder!</h3>
+    <h3>Nous devons vérifier si vous avez 18 ans ou plus</h3>
+    <div>
+      <button (click)="hasLegalAge = true" class="btn btn-yellow">
+        Oui j'ai 18 ans
+      </button>
+      <button (click)="hasLegalAge = false" class="btn btn-yellow">
+        Non je n'ai pas 18 ans
+      </button>
+    </div>
+  </div>
+</div>
 <projet-test-header></projet-test-header>
 <div class="router-container">
   <router-outlet />

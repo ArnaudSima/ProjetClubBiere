@@ -1,16 +1,8 @@
 
 .btn-form{
-    color: #F2B705;
-    border: solid 1px;
-    border-color: #F2B705;
     justify-self: center;
-    height: 45px;
 }
-.btn-form:hover{
-    color: #F8F8F8;
-    background-color: #F2B705;
-    transform: translateY(-1px);
-}
+
 
 .input-wrapper{
     display: flex;

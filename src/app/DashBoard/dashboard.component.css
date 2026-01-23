@@ -1,0 +1,11 @@
+.DashBoardWrapper{
+    height: fit-content;
+    width: fit-content;
+    background-color: #F8F8F8;
+    border: solid 1px;
+    padding: 5px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}

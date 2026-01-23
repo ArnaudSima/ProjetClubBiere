@@ -8,9 +8,16 @@ import { AuthService } from '../Services/Auth/auth.service';
 })
 export class DashBoardComponent implements OnInit {
   email: string | undefined = '';
-  constructor(private authService: AuthService) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+  ) {}
   ngOnInit(): void {
     console.log(this.authService.CurrentUser);
     this.email = this.authService.CurrentUser?.Email;
+  }
+  logOut() {
+    this.authService.LogOut();
+    this.router.navigate(['/auth']);
   }
 }
