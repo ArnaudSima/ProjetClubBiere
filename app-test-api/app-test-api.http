@@ -1,0 +1,8 @@
+@app_test_api_HostAddress = http://localhost:5018
+
+GET {{app_test_api_HostAddress}}/user
+Accept: application/json
+
+###
+
+
